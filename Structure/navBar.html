@@ -1,0 +1,67 @@
+
+<nav class="navbar navbar-default navbar-rks">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li id="homeNavTab"><a href="/Home.html">Home</a></li>
+                <li id="aboutNavDrop" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About RKS <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="whatIsNavTab"><a href="/WhatIsRKS.html">What is RKS?</a></li>
+                        <li id="socialsNavTab"><a href="/Socials.html">Socials</a></li>
+                        <li id="partiesNavTab"><a href="/Parties.html">Play Parties</a></li>
+                        <li id="rulesNavTab"><a href="/Information/Rules.html">Play Party Rules</a></li>
+                        <li id="etiquetteNavTab"><a href="/Information/Etiquette.html">Etiquette</a></li>
+                        <li id="guestNavTab"><a href="/Information/Attending.html">Attending RKS</a></li>
+                        <!-- <li id="spaceNavTab"><a href="/Space.html">Images of the Dungeon</a></li> -->
+                        <li id="faqNavTab"><a href="/FAQ.html">FAQ</a></li>
+                        <li id="ratesNavTab"><a href="/Information/Rates.html">Membership Rates</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://calendar.google.com/calendar/embed?src=uifq32fjj7k0isavgqbdangu3g%40group.calendar.google.com&ctz=America%2FNew_York">Event Calendar</a></li>
+                <!-- <li><a href="https://rksocietyauction.wordpress.com/" target="_blank">2021 Auction</a></li> -->
+                <!-- <li id="AnniversaryNavTab"><a href="/SpecialEvents/Anniversary.html">20th Anniversary</a></li> -->
+                <li><a href="https://discord.gg/TmDDYgG">Member Forum</a></li>
+                <li id="fetNavDrop" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fetlife Groups <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="fetRKSNavTab"><a href="http://fetlife.com/groups/1627" data-toggle="tooltip" title="The general RKS group">RKS</a></li>
+<!--                         <li id="fetRKSTNGNavTab"><a href="http://fetlife.com/groups/3734" data-toggle="tooltip" title="The Next Generation (ages 18-35) group">RKS TNG</a></li>
+                        <li id="fetRKSKCNavTab"><a href="http://fetlife.com/groups/46820" data-toggle="tooltip" title="The Kink Classic (ages 35 and up) group">RKS KC</a></li> -->
+                        <li id="fetRopeBiteNavTab"><a href="http://fetlife.com/groups/80926" data-toggle="tooltip" title="The community-run Rope Bite group">Rope Bite Rochester</a></li>
+                        <li id="fetPENavTab"><a href="http://fetlife.com/groups/98119" data-toggle="tooltip" title="The community-run Power Exchange group">RKS PE</a></li>
+                    </ul>
+                </li>
+                <li id="relatedNavDrop" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Related Sites <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="vendorsNavTab"><a href="/Related/Vendors.html">Vendors and Shopping</a></li>
+                        <li id="linksNavTab"><a href="/Related/Links.html">Related Groups</a></li>
+                        <li id="stepoutNavTab"><a href="/Articles/SteppingOut.html">Article - Stepping Out</a></li>
+                    </ul>
+                </li>
+                <li id="contactNavTab"><a href="/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+<script>
+    $(document).ready(function () {
+        //Highlight the nav bar item marked on the body tag
+        $("#" + $(".rks-body").attr("data-nav-target")).addClass("active");
+
+        //Highlight the nav bar dropdown if one is specified on the body tag
+        if ($('[data-nav-drop]').length) {
+            $("#" + $(".rks-body").attr("data-nav-drop")).addClass("active");
+        }
+    });
+</script>

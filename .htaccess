@@ -1,0 +1,8 @@
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 302 /campreg https://forms.gle/hVpMbZWiH1YPT1pN6
+Redirect 302 /discord https://discord.gg/TmDDYgG
+Redirect 302 /get-vetted https://forms.gle/BpsJpxg4TeKQ54nu9
+Redirect 302 /donate https://checkout.square.site/merchant/2897KFXY1JXQJ/checkout/PVETDFKGNE4BD7KNS6LBBECA
+Redirect 302 /sign-nda https://forms.gle/aHD1DBGK1RKMEJUD9
+Redirect 302 /skillshare https://forms.gle/vw23s9U5qMSHe35F7
